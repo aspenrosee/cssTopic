@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Presentation on different types of CSS Sizing">
+    <title>CSS Sizing</title>
+    <style>
+        body {
+            background-color: aliceblue;
+        }
+        p {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+        h2{
+            font-size: 1.75rem;
+        }
+        strong{
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Sizing Guide!</h1>
+
+    <article>
+        <h2>Types of styles</h2>
+        <p><strong>rem</strong> takes into account the font size of the <strong>root element</strong></p>
+        <p><strong>em</strong> relates to the font size of the <strong>element</strong></p>
+        <p><strong>vw</strong> is relative to 1% of the <strong>width</strong> of the viewport</p>
+        <p><strong>vh</strong> is realtive to 1% of the <strong>height</strong> of the viewport</p>
+        <p><strong>px</strong> 1/96 of an inch, however the pixels also depend on the <strong>device screen size</strong></p>
+    </article>
+    <article>
+        <p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="oNobEpN" data-user="aspenrosee" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+            <span>See the Pen <a href="https://codepen.io/aspenrosee/pen/oNobEpN">
+            Untitled</a> by aspenrosee (<a href="https://codepen.io/aspenrosee">@aspenrosee</a>)
+            on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+    <article>
+        <h2>When should you use each one?</h2>
+        <p><strong>rem:</strong> This is great for absolute measurement styles, and is realtive to what a device's default size is. </p>
+        <p><strong>em:</strong> This is good for making indents, margins, and measuring the width of an element on a page.</p>
+        <p><strong>vw/vh:</strong> These types of measurements help to make images or text be the full size of the viewport, or you can specify what portion you want it to be.</p>
+        <p><strong>px:</strong> Pixels are onyl used for elements that should stay the same size no matter what context it is in. Pixels generally should not be used otherwise, as they are not as dynamic as other options.</p>
+    </article>
+    
+</body>
+</html>
